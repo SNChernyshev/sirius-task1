@@ -19,7 +19,7 @@ services:
         volumes:
             - ./www:/var/www
     mysql:
-      image: mysql:8.0
+      image: mysql:5.7
       container_name: mysql
       working_dir: /application
       volumes:
@@ -29,6 +29,8 @@ services:
         - MYSQL_DATABASE=test
         - MYSQL_USER=testuser
         - MYSQL_PASSWORD=123456
+        - socket=/tmp/mysql.sock
+        - socket=/tmp/mysql.sock
       ports:
         - "3306:3306"
  

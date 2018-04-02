@@ -30,7 +30,7 @@ final class Init {
     function __construct()
     {
         // Создаем поключение к БД
-        $this->db = Mysql::create('localhost', 'testuser', '123456')
+        $this->db = Mysql::create('mysql', 'testuser', '123456')
             ->setDatabaseName('test')
             ->setCharset('utf8');
 

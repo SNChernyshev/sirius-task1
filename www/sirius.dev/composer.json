@@ -1,0 +1,5 @@
+{
+    "require": {
+        "krugozor/database": "^1.0"
+    }
+}
